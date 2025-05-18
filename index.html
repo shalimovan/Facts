@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Газета "Цікаві факти"</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Газета "Цікаві факти"</h1>
+
+  <article>
+    <h2> У Львові відкрили перший в Україні «котокафе» з безкоштовним входом</h2>
+    <p class="date">3 травня 2025</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMLzpThabFnWpHR2ylcHzVTBqFi0CpMrD48Q&s" alt="CatCafe Lviv">
+    <p>У центрі Львова запрацював новий заклад, де відвідувачі можуть пити каву та одночасно гратись із врятованими котами. Кафе співпрацює з місцевими притулками й допомагає знайти тваринам нових господарів. За перший тиждень було всиновлено 14 котиків.</p>
+  </article>
+
+  <article>
+    <h2>Українські школярі виграли світовий конкурс стартапів із проєктом «Рюкзак на сонячній батареї»</h2>
+    <p class="date">2 травня 2025</p>
+    <img src="https://solpower.com.ua/images/stories/virtuemart/product/allpowers-7-watt-6000_74.png" alt="Рюкзак на сонячній батареї">
+    <p>Команда школярів з Дніпра перемогла у конкурсі Startup World Teens у Сан-Франциско, представивши рюкзак із вбудованими сонячними панелями. Пристрій заряджає смартфони та має GPS-трекер. Ідею вже підтримали кілька європейських інвесторів.</p>
+  </article>
+
+  
+</body>
+</html>
+body {
+  font-family: Georgia, serif;
+  color: #000;
+  background: #fff;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+article {
+  margin-bottom: 40px;
+  page-break-inside: avoid;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-style: italic;
+  color: #444;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+@media print {
+  * {
+    color: black !important;
+    background: white !important;
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+} 
